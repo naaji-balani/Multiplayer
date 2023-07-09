@@ -20,7 +20,6 @@ public class SliderSync : NetworkBehaviour
 
         if (IsHost)
         {
-            Debug.Log("Host");
             // Add a listener to the slider's OnValueChanged event
             slider.onValueChanged.AddListener(OnLocalSliderValueChanged);
             slider.interactable = true;
